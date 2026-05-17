@@ -32,16 +32,18 @@ parameter VQ-VAE transformer model — for raw audio generation and analysis.
 
 ## 📁 Project Structure
 
-ai-music-generation/
-├── mp3_to_wav.py          # MP3 to WAV converter
-├── midi_parser.py         # MIDI note extraction and sequence builder
-├── train.py               # LSTM model training
-├── generate.py            # Music generation from trained model
-├── playhelper.py          # MIDI playback helper using pygame
-├── play_midi.py           # CLI MIDI player
-├── jukebox_generation.ipynb  # OpenAI Jukebox co-composition notebook
-├── data/
-│   └── notes              # Pickled note sequences
+AI-Music-Generation-LSTM-Jukebox/
+├── aimusic/
+│   ├── samples/              # Generated audio samples (WAV)
+│   └── sampler.ipynb         # Jukebox co-composition notebook
+├── midihelper/
+│   ├── midihelper.py         # MIDI note extraction and sequence builder
+│   ├── play.py               # MIDI player entry point
+│   └── playhelper.py         # pygame-based MIDI playback helper
+├── wavhelper/
+│   ├── mp32wav.py            # MP3 to WAV converter
+│   └── something.mp3         # Sample input audio
+├── build.sh                  # Environment setup script
 └── README.md
 
 ## 🔧 Setup and Installation
